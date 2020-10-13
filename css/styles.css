@@ -1,0 +1,183 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+/* Aquí esta la cabecera y quiero que me ocupe todo el ancho de la pantalla */
+.cabecera{
+    width: 100%;
+}
+/* Ordeno el titulo y le doy estilo al texto */
+.tituloPag{ 
+    display: flex;
+    justify-content: center;
+    font-family: serif;
+    text-transform: capitalize;
+    padding: 15px;
+    font-size: 30px;
+    background-color: #e0ccb5;
+    color: #1f334a;
+}
+/* Ordeno el menu y le doy estilo al texto */
+.menu{
+    display: flex;
+    background-color:#1f334a;
+    justify-content: center;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.MenuItem{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+/* Cuando el ratón pase por encima pido que se marque de otro color */
+.MenuItem:hover{
+    background-color: gray;
+}
+/* Ordeno el Breadcrumb y le doy estilo al texto */
+.migas{
+    display: flex;
+    background-color: #e0ccb5;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.migasEnlace{
+    color: #1f334a;
+    text-transform: capitalize;
+    padding-left: 15px;
+}
+
+/* Aquí está el Slider principal */
+.contenedorSlider{
+    width: 100%;
+}
+/* le doy el tamaño que quiero que presente en la pagina */
+.slider{
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+/* coloco las imagenes una encima de otra y las hago esconderse con opacidad 0 */
+ul.slider li{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+}
+/* quiero que la img se ajuste al contenedor */
+.sliderImg{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+/* Ordeno y coloco las rayas que funcionaran como enlace de las fotos */
+.paginacion{
+    text-align: center;
+}
+
+.paginacionList{
+    display: inline-block;
+}
+
+.paginicionBtn{
+    text-decoration: none;
+    font-size: 100px;
+    color: black;
+}
+/* Siempre que se muestre la primera foto en el slider */
+ul.slider li:first-child{
+    opacity: 1;
+}
+/* Que se muestre la foto que seleccione el cliente a través del cambio de ID */
+ul.slider li:target{
+    opacity: 1;
+}
+/* Estilo de todo lo que sean articulos de texto */
+.articulo{
+    padding-top: 50px;
+    padding-left: 60px;
+    padding-right: 100px;
+    width: 80%;
+}
+
+.tituloSe{
+    font-size: 60px;
+    text-transform: capitalize;
+    padding-bottom: 30px;
+}
+.parrafo{
+    text-align: left;
+}
+
+.enlaceServ{
+    color: black;
+    font-size: 30px;
+}
+/* Aquí indico el tamaño de la galería y permito que se pueda saltar de linea si no caben los elementos */
+.galeria{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+/* Se le da el tamaño que quiero que ocupe cada foto de la galeria */
+.contenedorGaleria{
+    width: 32%;
+    position: relative;
+    height: 250px;
+    margin-bottom: 15px;
+}
+
+/* La img se ajuste al contenedor */
+.imgGaleria{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Ajusto el video al centro */
+.video{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 50px;
+}
+/* Ordeno el Footer y le doy estilo al texto */
+.footer{
+    display: flex;
+    width: 100%;
+    background-color: #1f334a;
+    flex-direction: column;
+    margin-top: 40px;
+    padding-top: 20px;
+    
+}
+
+.footerEnlace{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+.footerItem{
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+}
+.iconos{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    justify-content: space-around;
+    background-color: whitesmoke;
+
+}
